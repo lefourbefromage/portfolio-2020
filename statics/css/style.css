@@ -94,6 +94,7 @@ html body {
   font-weight: 500;
   font-size: 1.4rem;
   line-height: initial;
+  color: hsl(0, 0%, 16%);
 }
 .container {
   width: 1440px;
@@ -113,6 +114,15 @@ html body {
   .container {
     width: 980px;
   }
+}
+.btn {
+  border-radius: 5rem;
+  padding: 1.5rem 5rem;
+  font-size: 1.8rem;
+}
+.btn.btn--blue {
+  background: linear-gradient(hsl(246, 73%, 60%), hsl(203, 100%, 44%));
+  color: white;
 }
 button,
 a {
@@ -288,7 +298,7 @@ header .container .navbar-wrapper .navbar-container #bg-circle {
   background: url('../img/background.jpg') no-repeat center;
   background-size: cover;
   position: relative;
-  min-height: 70rem;
+  padding-bottom: 10rem;
 }
 .hero-header:before {
   content: '';
@@ -302,7 +312,7 @@ header .container .navbar-wrapper .navbar-container #bg-circle {
 }
 .hero-header .container {
   z-index: 2;
-  padding-top: var(--header-height);
+  padding-top: calc((var(--header-height)) + 2rem);
 }
 .hero-header .container .row {
   display: flex;
@@ -363,6 +373,9 @@ header .container .navbar-wrapper .navbar-container #bg-circle {
   visibility: hidden;
   display: none;
 }
+.hero-header .container .hero-header__text .btn {
+  margin-top: 4rem;
+}
 .hero-header .container .hero-header__img {
   width: 50%;
   display: flex;
@@ -381,7 +394,7 @@ header .container .navbar-wrapper .navbar-container #bg-circle {
   overflow: hidden;
 }
 .hero-header .svg-transition svg {
-  height: 100px;
+  height: 10rem;
   width: 100%;
   transform: scale(1.01);
   display: block;
