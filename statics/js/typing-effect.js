@@ -50,4 +50,3 @@ writingAll('item', 'data-text-typing');
 
 
 
-
