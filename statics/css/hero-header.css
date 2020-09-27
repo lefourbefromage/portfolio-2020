@@ -1,0 +1,15 @@
+.hero-header {
+  background: url('../img/background.jpg') no-repeat center;
+  background-size: cover;
+  position: relative;
+  min-height: 50rem;
+}
+.hero-header:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/grid.svg');
+  background-repeat: repeat;
+}
+/*# sourceMappingURL=hero-header.css.map */
